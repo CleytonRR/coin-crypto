@@ -67,6 +67,9 @@ function Home() {
           </div>
         </Container>
       </section>
+      <section className={styles.highlight}>
+        <h2>Conheça mais moedas</h2>
+      </section>
     </>
   );
 }

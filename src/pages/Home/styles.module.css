@@ -53,3 +53,21 @@
     transform: translateX(0);
   }
 }
+
+.highlight {
+  height: 247px;
+  width: 100%;
+
+  background-color: var(--pink-main);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight h2 {
+  font-size: 3rem;
+  font-family: "Reem Kufi", sans-serif;
+  color: var(--white);
+}
