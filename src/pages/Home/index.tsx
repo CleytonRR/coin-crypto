@@ -25,7 +25,11 @@ function Home() {
                 dias atuais existe uma infinidade de moedas digitais.
               </p>
             </div>
-            <img src={BitcoinLogo} alt="Bitcoin logo" />
+            <img
+              src={BitcoinLogo}
+              alt="Bitcoin logo"
+              className={styles.img_animation}
+            />
           </div>
         </Container>
       </section>
