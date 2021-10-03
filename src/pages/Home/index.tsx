@@ -7,6 +7,7 @@ import Container from "components/Container";
 import BitcoinLogo from "assets/bitcoin_logo.png";
 
 import styles from "./styles.module.css";
+import ButtonDetail from "components/Button-detail";
 
 function Home() {
   const [showHistoryBitcoinContainer, setShowHistoryBitcoinContainer] =
@@ -68,7 +69,10 @@ function Home() {
         </Container>
       </section>
       <section className={styles.highlight}>
-        <h2>Conheça mais moedas</h2>
+        <div>
+          <h2>Conheça mais moedas</h2>
+          <ButtonDetail />
+        </div>
       </section>
     </>
   );
