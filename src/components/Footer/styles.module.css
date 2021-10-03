@@ -1,0 +1,16 @@
+.container_footer {
+  height: 184px;
+
+  background-color: var(--light-blue);
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div h5 {
+  font-size: 1.625rem;
+  font-family: "Reem Kufi", sans-serif;
+}

@@ -8,15 +8,25 @@ import BitcoinLogo from "assets/bitcoin_logo.png";
 
 import styles from "./styles.module.css";
 import ButtonDetail from "components/Button-detail";
+import Footer from "components/Footer";
 
 function Home() {
   const [showHistoryBitcoinContainer, setShowHistoryBitcoinContainer] =
     useState(false);
+
+  const [showHighlight, setShowHighLight] = useState(false);
   const containerRef = useRef(null);
+  const highlightRef = useRef(null);
 
   const callbackFunction = ([entries]: IntersectionObserverEntry[]) => {
     if (entries.intersectionRatio > 0.25866666666666666) {
       setShowHistoryBitcoinContainer(true);
+    }
+  };
+
+  const observerHighlightCb = ([entries]: IntersectionObserverEntry[]) => {
+    if (entries.isIntersecting) {
+      setShowHighLight(true);
     }
   };
 
@@ -38,6 +48,26 @@ function Home() {
       }
     };
   }, [containerRef]);
+
+  useEffect(() => {
+    const options: IntersectionObserverInit = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1,
+    };
+
+    const observer = new IntersectionObserver(observerHighlightCb, options);
+
+    if (highlightRef.current) {
+      observer.observe(highlightRef.current);
+    }
+
+    return () => {
+      if (highlightRef.current) {
+        observer.unobserve(highlightRef.current);
+      }
+    };
+  }, [highlightRef]);
 
   return (
     <>
@@ -68,12 +98,15 @@ function Home() {
           </div>
         </Container>
       </section>
-      <section className={styles.highlight}>
-        <div>
-          <h2>Conheça mais moedas</h2>
-          <ButtonDetail />
-        </div>
+      <section className={styles.highlight} ref={highlightRef}>
+        {showHighlight && (
+          <div>
+            <h2>Conheça mais moedas</h2>
+            <ButtonDetail />
+          </div>
+        )}
       </section>
+      <Footer />
     </>
   );
 }
