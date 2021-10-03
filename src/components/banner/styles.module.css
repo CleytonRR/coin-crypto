@@ -13,7 +13,6 @@
 .div_contents {
   width: 568px;
   height: 100%;
-  font-family: "Nunito", sans-serif;
   color: var(--white);
 
   display: flex;
