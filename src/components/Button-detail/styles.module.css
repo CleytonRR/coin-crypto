@@ -1,0 +1,21 @@
+.button_list {
+  width: 210px;
+  height: 54px;
+
+  font-size: 1rem;
+
+  padding: 1rem 2rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  box-shadow: rgba(255, 250, 255, 0.2) 0 2px 8px 0;
+}
+
+.button_list:hover {
+  background-color: var(--light-blue);
+  color: var(--black-text);
+}

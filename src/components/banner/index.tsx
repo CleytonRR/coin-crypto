@@ -1,5 +1,7 @@
-import Container from "components/Container";
 import React from "react";
+
+import ButtonDetail from "components/Button-detail";
+import Container from "components/Container";
 
 import styles from "./styles.module.css";
 
@@ -14,7 +16,7 @@ const Banner = () => {
 
           <h3 className={styles.secondary_title}>E Esse futuro começa agora</h3>
 
-          <button className={styles.button_list}>Lista de moedas {"->"}</button>
+          <ButtonDetail />
         </div>
       </Container>
     </header>
