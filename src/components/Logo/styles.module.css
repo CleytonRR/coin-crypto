@@ -1,0 +1,10 @@
+.logo {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2rem;
+  color: var(--black-text);
+}
+
+span {
+  text-transform: uppercase;
+  color: var(--white);
+}
