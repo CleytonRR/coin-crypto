@@ -40,6 +40,11 @@
   font-family: "Reem Kufi", sans-serif;
 
   margin-bottom: 0.5rem;
+
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card h5 {
