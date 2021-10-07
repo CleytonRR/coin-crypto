@@ -1,8 +1,8 @@
 import React from "react";
-import Detail from "pages/Detail";
+import Routes from "./routes";
 
 function App() {
-  return <Detail />;
+  return <Routes />;
 }
 
 export default App;
