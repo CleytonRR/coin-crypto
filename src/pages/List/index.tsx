@@ -17,7 +17,7 @@ export interface Coin {
   exp: string[];
 }
 
-interface CoinDataAxios {
+export interface CoinDataAxios {
   coins: Coin[];
 }
 
