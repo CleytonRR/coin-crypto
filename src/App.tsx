@@ -1,8 +1,8 @@
 import React from "react";
-import List from "pages/List";
+import Detail from "pages/Detail";
 
 function App() {
-  return <List />;
+  return <Detail />;
 }
 
 export default App;

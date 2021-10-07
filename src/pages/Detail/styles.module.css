@@ -1,0 +1,14 @@
+.title {
+  font-size: 4rem;
+  font-family: "Reem Kufi", sans-serif;
+  color: var(--light-blue);
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.title svg {
+  width: 48px;
+  height: 42px;
+}
