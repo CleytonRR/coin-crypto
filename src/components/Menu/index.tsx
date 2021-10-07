@@ -1,5 +1,7 @@
-import Logo from "components/Logo";
 import React from "react";
+import { Link } from "react-router-dom";
+
+import Logo from "components/Logo";
 
 import styles from "./styles.module.css";
 
@@ -10,8 +12,12 @@ const Menu = () => {
         <Logo />
         <nav>
           <ul className={styles.menu_list}>
-            <li className={styles.menu_list_item}>Home</li>
-            <li className={styles.menu_list_item}>Lista</li>
+            <li className={styles.menu_list_item}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={styles.menu_list_item}>
+              <Link to="/list">Lista</Link>
+            </li>
             <li className={styles.menu_list_item}>Login</li>
           </ul>
         </nav>

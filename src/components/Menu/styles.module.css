@@ -25,3 +25,16 @@
 li + li {
   margin-left: 2rem;
 }
+
+.menu_list_item a {
+  transition: color 300ms ease;
+  text-decoration: none;
+}
+
+.menu_list_item a:hover {
+  color: var(--white);
+}
+
+.menu_list_item a:visited {
+  color: initial;
+}
