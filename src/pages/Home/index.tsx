@@ -31,6 +31,7 @@ function Home() {
   };
 
   useEffect(() => {
+    let observerRefValue: HTMLElement | null = null;
     const options = {
       root: null,
       rootMargin: "0px",
@@ -40,16 +41,18 @@ function Home() {
 
     if (containerRef.current) {
       observer.observe(containerRef.current);
+      observerRefValue = highlightRef.current;
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (observerRefValue) {
+        observer.unobserve(observerRefValue);
       }
     };
   }, [containerRef]);
 
   useEffect(() => {
+    let observerRefValue: HTMLElement | null = null;
     const options: IntersectionObserverInit = {
       root: null,
       rootMargin: "0px",
@@ -60,11 +63,12 @@ function Home() {
 
     if (highlightRef.current) {
       observer.observe(highlightRef.current);
+      observerRefValue = highlightRef.current;
     }
 
     return () => {
-      if (highlightRef.current) {
-        observer.unobserve(highlightRef.current);
+      if (observerRefValue) {
+        observer.unobserve(observerRefValue);
       }
     };
   }, [highlightRef]);
