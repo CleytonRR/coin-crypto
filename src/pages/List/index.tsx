@@ -6,6 +6,7 @@ import Container from "components/Container";
 
 import styles from "./styles.module.css";
 import api from "services/api";
+import { Link } from "react-router-dom";
 
 export interface Coin {
   id: string;
@@ -52,7 +53,7 @@ const List = () => {
               <img src={coin.icon} alt={coin.name} />
               <h3>{coin.name}</h3>
               <h5>{formatPrice(coin.price)}</h5>
-              <a href="">Ver detalhes</a>
+              <Link to={`detail/${coin.name}`}>Ver detalhes</Link>
             </div>
           ))}
         </section>
