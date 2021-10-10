@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+<div align="center" style="font-size: 48px; font-weight: bold">
+<span style="color: #3e92cc">C</span>oin <span style="color: #3e92cc">C</span>rypto
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About project
 
-## Available Scripts
+project made in Maratonas Academy course. This project show a cryptocurrency list with detail and current values.
 
-In the project directory, you can run:
+## Built With :rocket:
 
-### `yarn start`
+- [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Figma](figma.com/) - software to create wireframe
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) - used to controll routes
+- [axios](https://github.com/axios/axios) - Used to get api data
+- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) - A new Javascript api to control intersection observer element in page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## style guide :cyclone:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Color palette:
 
-### `yarn test`
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
+<div style="background-color: #3e92cc; width: 100%; height: 100%">
+</div>
+  Light blue
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
+<div style="background-color: #0a2463; width: 100%; height: 100%">
+</div>
+  Dark blue
+</div>
 
-### `yarn build`
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
+<div style="background-color: #fffaff; width: 100%; height: 100%">
+</div>
+  White
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
+<div style="background-color: #d8315b; width: 100%; height: 100%">
+</div>
+  Pink 
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
+<div style="background-color: #1e1b18; width: 100%; height: 100%">
+</div>
+  Pink 
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**margins:** 8px, 16px, 32px, 64px, 128px
 
-### `yarn eject`
+**font-size**: 16px, 32px, 48px
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Landing page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Landing page](landing_page.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### List Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![List page](list_cryptos.png)
 
-## Learn More
+### Detail Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Detail page](detail_page.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started :fire:
+
+#### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+  ```sh
+  npm install --global yarn
+  ```
+
+#### Installation
+
+1. Clone the repo
+
+```sh
+  git clone git@github.com:CleytonRR/coin-crypto.git
+```
+
+2. Install packages, in project folder:
+
+```sh
+  yarn install or yarn
+```
+
+## Run project :rocket:
+
+In project folder:
+
+```sh
+  yarn start
+```
