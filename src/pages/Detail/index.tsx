@@ -8,6 +8,7 @@ import styles from "./styles.module.css";
 import Container from "components/Container";
 import api from "services/api";
 import { Coin, CoinDataAxios } from "pages/List";
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   const [coin, setCoin] = useState<Coin>();
@@ -35,7 +36,10 @@ const Detail = () => {
       <Menu />
       <Container>
         <h1 className={styles.title}>
-          <ArrowLeft /> Bitcoin
+          <Link to="/list">
+            <ArrowLeft />
+          </Link>
+          Bitcoin
         </h1>
 
         {coin ? (
