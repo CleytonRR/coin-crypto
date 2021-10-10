@@ -8,6 +8,18 @@
   align-items: center;
 }
 
+.title a {
+  transition: all 400ms ease;
+}
+
+.title a:visited {
+  color: var(--light-blue);
+}
+
+.title a:hover {
+  color: var(--light-blue);
+}
+
 .title svg {
   width: 48px;
   height: 42px;

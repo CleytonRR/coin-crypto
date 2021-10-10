@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 
 import Footer from "components/Footer";
 import Menu from "components/Menu";
@@ -8,21 +9,26 @@ import styles from "./styles.module.css";
 import Container from "components/Container";
 import api from "services/api";
 import { Coin, CoinDataAxios } from "pages/List";
-import { Link } from "react-router-dom";
+
+interface IParams {
+  coinname: string;
+}
 
 const Detail = () => {
   const [coin, setCoin] = useState<Coin>();
+
+  const { coinname } = useParams<IParams>();
 
   useEffect(() => {
     async function getCoin() {
       const { data } = await api.get<CoinDataAxios>("");
 
-      const selectedCoin = data.coins.find(({ name }) => name === "Bitcoin");
+      const selectedCoin = data.coins.find(({ name }) => name === coinname);
       setCoin(selectedCoin);
     }
 
     getCoin();
-  }, []);
+  }, [coinname]);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-US", {
@@ -39,7 +45,7 @@ const Detail = () => {
           <Link to="/list">
             <ArrowLeft />
           </Link>
-          Bitcoin
+          {coin?.name}
         </h1>
 
         {coin ? (
