@@ -1,5 +1,5 @@
-<div align="center" style="font-size: 48px; font-weight: bold">
-<span style="color: #3e92cc">C</span>oin <span style="color: #3e92cc">C</span>rypto
+<div align="center" style="font-size: 48px; font-weight: bold;">
+<span style="color: #3e92cc;">C</span>oin <span style="color: #3e92cc;">C</span>rypto
 </div>
 
 ## About project
@@ -18,33 +18,28 @@ project made in Maratonas Academy course. This project show a cryptocurrency lis
 
 Color palette:
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
-<div style="background-color: #3e92cc; width: 100%; height: 100%">
-</div>
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
+<div style="background-color: #3e92cc; width: 100%; height: 100%;"></div>
   Light blue
 </div>
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
-<div style="background-color: #0a2463; width: 100%; height: 100%">
-</div>
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
+<div style="background-color: #0a2463; width: 100%; height: 100%;"></div>
   Dark blue
 </div>
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
-<div style="background-color: #fffaff; width: 100%; height: 100%">
-</div>
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
+<div style="background-color: #fffaff; width: 100%; height: 100%;"></div>
   White
 </div>
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
-<div style="background-color: #d8315b; width: 100%; height: 100%">
-</div>
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
+<div style="background-color: #d8315b; width: 100%; height: 100%;"></div>
   Pink 
 </div>
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px" >
-<div style="background-color: #1e1b18; width: 100%; height: 100%">
-</div>
+<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
+<div style="background-color: #1e1b18; width: 100%; height: 100%;"></div>
   Pink 
 </div>
 
