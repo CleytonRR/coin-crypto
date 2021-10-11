@@ -18,8 +18,8 @@ project made in Maratonas Academy course. This project show a cryptocurrency lis
 
 Color palette:
 
-<div style="width: 70px; height: 60px; display: inline-block; margin-right: 8px;">
-<div style="background-color: #3e92cc; width: 100%; height: 100%;"></div>
+<div style="width:70px; height:60px; display:inline-block; margin-right:8px;">
+<div style="background-color:#3e92cc; width:100%; height:100%;"></div>
   Light blue
 </div>
 
